@@ -54,7 +54,7 @@ function Projects({ projects }: Props) {
                     </div>
 
                         <p className="text-lg text-center md:text-left">
-                        {project.summary}
+                        <link rel="stylesheet" href={project.summary} />
                         </p>
 
                         <p className="text-lg text center md:text-left text-bold">{project.linkToBuild}
@@ -63,6 +63,8 @@ function Projects({ projects }: Props) {
         </div>
         ))}
         </motion.div>
+
+        
         <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12 ">
         
         </div>
